@@ -1,0 +1,8 @@
+---
+- name: Install Apache
+  hosts: all
+  tasks:
+    - name: Install Apache
+      ansible.builtin.package:
+        name: httpd
+        state: latest
